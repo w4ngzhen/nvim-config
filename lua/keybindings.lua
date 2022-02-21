@@ -21,3 +21,20 @@ map("n", "<A-l>", "<C-w>l", opt)
 
 -- NvimTree
 map('n', '<A-m>', ':NvimTreeToggle<CR>', opt)
+
+local pluginKeys = {}
+
+-- lsp 回调函数快捷键设置
+pluginKeys.maplsp = function(mapbuf)
+  -- go xx
+  mapbuf('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', opt)
+  mapbuf('n', 'gh', '<cmd>lua vim.lsp.buf.hover()<CR>', opt)
+  mapbuf('n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>', opt)
+  mapbuf('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opt)
+  mapbuf('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opt)
+  -- diagnostic
+  mapbuf('n', 'go', '<cmd>lua vim.diagnostic.open_float()<CR>', opt)
+  mapbuf('n', 'gp', '<cmd>lua vim.diagnostic.goto_prev()<CR>', opt)
+  mapbuf('n', 'gn', '<cmd>lua vim.diagnostic.goto_next()<CR>', opt)
+end
+return pluginKeys
