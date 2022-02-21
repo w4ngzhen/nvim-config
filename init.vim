@@ -7,6 +7,8 @@ lua require('plugin-config/bufferline')
 lua require('plugin-config/lualine')
 lua require('plugin-config/nvim-tree')
 
+lua require('lsp/index-setup')
+
 " display visualblock info
 set showmode
 
