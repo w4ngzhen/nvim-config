@@ -22,5 +22,6 @@ return require('packer').startup(function()
     },
     config = function() require'nvim-tree'.setup {} end
   }
-
+  -- lspconfig
+  use {'neovim/nvim-lspconfig', 'williamboman/nvim-lsp-installer'}
 end)
