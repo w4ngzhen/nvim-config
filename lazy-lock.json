@@ -5,4 +5,3 @@
   "lualine.nvim": { "branch": "master", "commit": "05d78e9fd0cdfb4545974a5aa14b1be95a86e9c9" },
   "nvim-tree.lua": { "branch": "master", "commit": "f873625d0636889af4cd47a01e486beb865db205" },
   "nvim-web-devicons": { "branch": "master", "commit": "2a125024a137677930efcfdf720f205504c97268" }
-}
