@@ -1,8 +1,8 @@
 {
-  "coc.nvim": { "branch": "release", "commit": "bbaa1d5d1ff3cbd9d26bb37cfda1a990494c4043" },
   "dracula.nvim": { "branch": "main", "commit": "5716b1395b32a5865476dd3314bd8888e5f91532" },
   "lazy.nvim": { "branch": "main", "commit": "4c8b625bc873ca76b76eee0c28c98f1f7148f17f" },
   "lualine.nvim": { "branch": "master", "commit": "05d78e9fd0cdfb4545974a5aa14b1be95a86e9c9" },
+  "nvim-lspconfig": { "branch": "master", "commit": "b6b34b9acf84949f0ac1c00747765e62b81fb38d" },
   "nvim-tree.lua": { "branch": "master", "commit": "3cc698b35b0a67792c61e1726830bb9ecfc4c9f4" },
   "nvim-treesitter": { "branch": "master", "commit": "d49ba798c95398e62321b40041e8ac4654fea251" },
   "nvim-web-devicons": { "branch": "master", "commit": "9ab9b0b894b2388a9dbcdee5f00ce72e25d85bf9" },
