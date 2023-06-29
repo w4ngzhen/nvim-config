@@ -5,3 +5,4 @@ require("basic")
 require("lazynvim-init")
 -- lsp
 require("lsp")
+require("lsp/cmp")
