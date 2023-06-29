@@ -1,4 +1,4 @@
 return {
-  name = 'jsonls',
+  name = 'cssmodules_ls',
   setup_config = {},
 }

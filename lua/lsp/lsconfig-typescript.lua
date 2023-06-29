@@ -1,2 +1,4 @@
--- npm install -g typescript typescript-language-server
-require'lspconfig'.tsserver.setup{}
+return {
+  name = 'tsserver',
+  setup_config = {},
+}

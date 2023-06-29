@@ -1,2 +1,4 @@
--- npm i -g vscode-langservers-extracted
-require'lspconfig'.html.setup{}
+return {
+  name = 'html',
+  setup_config = {},
+}

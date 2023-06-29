@@ -1,4 +1,6 @@
--- npm i -g vscode-langservers-extracted
-require'lspconfig'.cssls.setup{}
--- npm install -g cssmodules-language-server
-require'lspconfig'.cssmodules_ls.setup{}
+local M = {
+ name = 'cssls',
+ setup_config = {
+ }
+}
+return M
