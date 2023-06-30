@@ -1,3 +1,5 @@
+-- 语言服务器
+-- https://github.com/LuaLS/lua-language-server/releases
 return {
   name = 'lua_ls',
   setup_config = {
