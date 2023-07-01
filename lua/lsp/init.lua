@@ -1,5 +1,4 @@
 vim.lsp.set_log_level("debug")
-local lsp_keymap = require("lsp.lsp-keymap")
 local config_tb = {
   require "lsp.lsconfig-lua",
   require "lsp.lsconfig-css",
@@ -11,8 +10,5 @@ local config_tb = {
 --
 for _, cfg in ipairs(config_tb) do
   local setup_config = cfg.setup_config
-  -- 公共配置
-  setup_config['on_attach'] = lsp_keymap.ls_on_attach
-
   require("lspconfig")[cfg.name].setup(setup_config)
 end
