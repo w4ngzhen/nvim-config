@@ -6,9 +6,9 @@ cmp.setup {
   snippet = {
     expand = function(args)
       -- 以下插件作为前提：
-      -- 'hrsh7th/cmp-vsnip'
-      -- 'hrsh7th/vim-vsnip'
-      vim.fn["vsnip#anonymous"](args.body)
+      -- { 'L3MON4D3/LuaSnip' },
+      -- { 'saadparwaiz1/cmp_luasnip' },
+      require('luasnip').lsp_expand(args.body)
     end,
   },
   -- 来源
@@ -16,9 +16,9 @@ cmp.setup {
     {
       { name = 'nvim_lsp' },
       -- 以下插件作为前提：
-      -- 'hrsh7th/cmp-vsnip'
-      -- 'hrsh7th/vim-vsnip'
-      { name = 'vsnip' },
+      -- { 'L3MON4D3/LuaSnip' },
+      -- { 'saadparwaiz1/cmp_luasnip' },
+      { name = 'luasnip' },
     },
     {
       { name = 'buffer' },
@@ -56,7 +56,7 @@ cmp.setup {
     -- Accept currently selected item. If none selected, `select` first item.
     -- Set `select` to `false` to only confirm explicitly selected items.
     ['<CR>'] = cmp.mapping.confirm({
-      select = true ,
+      select = true,
       behavior = cmp.ConfirmBehavior.Replace
     }),
     -- ['<C-y>'] = cmp.config.disable, -- Specify `cmp.config.disable` if you want to remove the default `<C-y>` mapping.
@@ -78,6 +78,6 @@ cmp.setup.cmdline(':', {
   sources = cmp.config.sources({
     { name = 'path' }
   }, {
-      { name = 'cmdline' }
-    })
+    { name = 'cmdline' }
+  })
 })

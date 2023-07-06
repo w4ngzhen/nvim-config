@@ -6,9 +6,11 @@ local M = {
   { 'hrsh7th/cmp-buffer' },
   { 'hrsh7th/cmp-path' },
   { 'hrsh7th/cmp-cmdline' },
-  -- vsnip代码片段
-  { 'hrsh7th/cmp-vsnip' },
-  { 'hrsh7th/vim-vsnip' },
+  -- 使用LuaSnip作为代码补全引擎
+  -- https://github.com/L3MON4D3/LuaSnip
+  -- 使用 cmp_luasnip 作为nvim-cmp补全框架和LuaSnip补全引擎的桥梁
+  { 'L3MON4D3/LuaSnip' },
+  { 'saadparwaiz1/cmp_luasnip' },
   -- https://github.com/rafamadriz/friendly-snippets
   -- 包含了大部分常用语言的代码段
   { 'rafamadriz/friendly-snippets' },
