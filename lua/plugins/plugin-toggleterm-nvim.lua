@@ -1,16 +1,22 @@
 -- toggleterm 插件相关配置
--- 
+--
 -- 插件keymap设置
 local function set_keymap()
+  local opts = { noremap = true, silent = true }
+  -- 经典keymap
+  vim.api.nvim_set_keymap("n", "<leader>tv", "<cmd>ToggleTerm direction=vertical<CR>", opts)
+  vim.api.nvim_set_keymap("n", "<leader>tf", "<cmd>ToggleTerm direction=float<CR>", opts)
+  -- 当处于TERMINAL 模式下，<leader>n 可映射为退出TERMINAL模式进入到NORMAL模式的keymap
+  vim.api.nvim_set_keymap("t", "<leader>n", "<C-\\><C-N>", opts)
+
   -- 通过自定义terminal，调用外部安装的lazygit
   local Terminal = require('toggleterm.terminal').Terminal
   local lazygit  = Terminal:new({
     cmd = "lazygit",
-    hidden = true,
-    -- 添加on_close才能在lazygit异常的时候终端不闪退
-    on_close = function()
-      vim.cmd("echo on_close")
-    end,
+    hidden = false,
+    direction = 'float',
+    on_open = function(term)
+    end
   })
 
   function _lazygit_toggle()
@@ -19,9 +25,9 @@ local function set_keymap()
 
   vim.api.nvim_set_keymap(
     "n",
-    "<C-M-\\>",     --CTRL+ALT+\
+    "<leader>git",
     "<cmd>lua _lazygit_toggle()<CR>",
-    { noremap = true, silent = true }
+    opts
   )
 end
 return {
@@ -38,8 +44,8 @@ return {
             return vim.o.columns * 0.4
           end
         end,
-        direction = 'float',
-        open_mapping = [[<C-\>]],
+        direction = 'horizontal',
+        open_mapping = [[<leader>tt]],
       })
       --
       set_keymap()
