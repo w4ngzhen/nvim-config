@@ -7,6 +7,7 @@ require("basic")
 -- bootstrap lazy.nvim
 -- ./lua/lazynvim-init.lua
 require("lazynvim-init")
--- lsp
-require("lsp")
-require("lsp/cmp")
+-- 加载 ./lua/code-cmp 代码补全功能
+-- require该模块以前，需要保证lazynvim管理的有关cmp的插件加载完成
+-- 只要放在 require('lazynvim-init')就能满足
+require("code-cmp")

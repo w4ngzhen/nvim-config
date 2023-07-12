@@ -1,3 +1,5 @@
+-- 加载该模块的时候，需要保证plugin-nvim-cmp.lua插件配置均加载完成
+-- 所以，该模块会放在init.lua中关于require lazy.nvim 之后
 local lspkind = require 'lspkind'
 local cmp = require 'cmp'
 
@@ -25,7 +27,6 @@ cmp.setup {
       { name = 'path' }
     }
   ),
-
   -- 使用lspkind-nvim显示类型图标
   formatting = {
     format = lspkind.cmp_format({
