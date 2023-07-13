@@ -25,7 +25,8 @@ cmp.setup {
     {
       { name = 'buffer' },
       { name = 'path' }
-    }
+    },
+    { name = 'npm', keyword_length = 4 }
   ),
   -- 使用lspkind-nvim显示类型图标
   formatting = {

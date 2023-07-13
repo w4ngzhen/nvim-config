@@ -6,6 +6,7 @@ local M = {
   { 'hrsh7th/cmp-buffer' },
   { 'hrsh7th/cmp-path' },
   { 'hrsh7th/cmp-cmdline' },
+  { "David-Kunz/cmp-npm" },
   -- 使用LuaSnip作为代码补全引擎
   -- https://github.com/L3MON4D3/LuaSnip
   -- 使用 cmp_luasnip 作为nvim-cmp补全框架和LuaSnip补全引擎的桥梁
