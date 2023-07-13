@@ -36,7 +36,7 @@ local function setup_keymap()
   keymap("n", "<leader>pt", "<cmd>Lspsaga peek_type_definition<CR>", opts)
   -- Go to type definition
   keymap("n", "<leader>gt", "<cmd>Lspsaga goto_type_definition<CR>", opts)
-  -- 
+  --
   -- === Show line diagnostics ===
   -- You can pass argument ++unfocus to
   -- unfocus the show_line_diagnostics floating window
@@ -91,5 +91,8 @@ return {
     require("lspsaga").setup({})
     setup_keymap()
   end,
-  dependencies = { { "nvim-tree/nvim-web-devicons" } }
+  dependencies = {
+    "nvim-treesitter/nvim-treesitter",
+    "nvim-tree/nvim-web-devicons",
+  }
 }
