@@ -22,6 +22,8 @@ return {
           "json",
           "scss",
           "vue",
+          "toml",
+          "rust",
         },
 
         -- Install parsers synchronously (only applied to `ensure_installed`)

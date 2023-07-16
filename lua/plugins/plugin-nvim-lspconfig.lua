@@ -17,6 +17,7 @@ return {
         require "lsp/lsconfig-html",
         require "lsp/lsconfig-json",
         require "lsp/lsconfig-typescript",
+        require "lsp/lsconfig-rust",
       }
       --
       local lspconfig = require('lspconfig')
