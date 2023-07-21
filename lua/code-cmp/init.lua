@@ -67,6 +67,8 @@ cmp.setup {
   }
 }
 
+-- load vscode snippet (friendly-snippet)
+require("luasnip.loaders.from_vscode").lazy_load()
 
 -- Use buffer source for `/`.
 cmp.setup.cmdline('/', {
