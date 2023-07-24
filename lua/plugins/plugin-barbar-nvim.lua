@@ -55,6 +55,9 @@ return {
     version = '^1.0.0', -- optional: only update when a new 1.x version is released
     config = function()
       require("barbar").setup({
+        icons = {
+          button = ''
+        },
         -- Set the filetypes which barbar will offset itself for
         sidebar_filetypes = {
           -- Use the default values: {event = 'BufWinLeave', text = nil}
