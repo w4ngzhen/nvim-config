@@ -18,6 +18,7 @@ return {
         require "lsp/lsconfig-json",
         require "lsp/lsconfig-typescript",
         require "lsp/lsconfig-rust",
+        require "lsp/lsconfig-eslint",
       }
       --
       local lspconfig = require('lspconfig')
