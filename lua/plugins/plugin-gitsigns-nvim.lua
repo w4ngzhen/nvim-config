@@ -25,5 +25,7 @@ return {
         map('n', '<leader>td', gs.toggle_deleted)
       end
     })
+    -- nvim-scrollbar 配置，支持scrollbar显示git hunk信息
+    require("scrollbar.handlers.gitsigns").setup()
   end,
 }
