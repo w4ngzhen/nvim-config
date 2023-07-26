@@ -90,6 +90,8 @@ npm install -g typescript typescript-language-server
 npm install -g vscode-langservers-extracted
 ```
 
+注意：eslint已经包含在了该语言服务中，lspconfig只需要对eslint进行setup即可。
+
 #### CSS模块化语言服务
 
 ```
