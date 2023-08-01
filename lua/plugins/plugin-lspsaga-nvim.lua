@@ -20,7 +20,7 @@ local function setup_keymap()
   -- If there is no definition, it will instead be hidden
   -- When you use an action in finder like "open vsplit",
   -- you can use <C-t> to jump back
-  keymap("n", "<leader>gf", "<cmd>Lspsaga lsp_finder<CR>", opts)
+  keymap("n", "<leader>gf", "<cmd>Lspsaga finder<CR>", opts)
 
   -- Code action
   keymap({ "n", "v" }, "<M-CR>", "<cmd>Lspsaga code_action<CR>", opts)
