@@ -1,6 +1,9 @@
 -- utf8
 vim.g.encoding = "UTF-8"
 vim.o.fileencoding = 'utf-8'
+-- 拼写检查
+vim.opt.spelllang = 'en_us'
+vim.opt.spell = true
 -- jk移动时光标下上方保留8行
 vim.o.scrolloff = 8
 vim.o.sidescrolloff = 8
