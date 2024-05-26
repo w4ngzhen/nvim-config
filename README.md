@@ -49,7 +49,7 @@ scoop install main/llvm
 Windows Scoop安装
 
 ```powershel
-scoop install lazygit
+scoop install extras/lazygit
 scoop install fd
 scoop install ripgrep
 ```
