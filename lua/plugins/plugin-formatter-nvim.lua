@@ -31,10 +31,6 @@ return {
     require('formatter').setup({
       filetype = filetype_config
     })
-    -- keymap设置
-    local keymap = vim.keymap.set
-    local opts = { noremap = true }
-    keymap("n", "<leader>f", "<cmd>Format<CR>", opts)
-    keymap("n", "<leader>F", "<cmd>FormatWrite<CR>", opts)
+    require('keymap.keymap_formatter').setup_keymap_for_formatter();
   end
 }

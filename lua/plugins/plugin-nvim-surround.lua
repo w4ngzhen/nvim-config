@@ -1,5 +1,5 @@
 --    Old text                    Command         New text
-----------------------------------------------------------------------------------
+------------------------------------------------------------------------
 --    surr*ound_words             ysiw)           (surround_words)
 --    *make strings               ys$"            "make strings"
 --    [delete ar*ound me!]        ds]             delete around me!
@@ -10,6 +10,7 @@
 return {
   {
     "kylechui/nvim-surround",
+    branch = "main",
     config = function()
       require("nvim-surround").setup({
         -- Configuration here, or leave empty to use defaults
